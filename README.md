@@ -9,4 +9,5 @@ In this workshop, you will learn to design and make multiplayer wearable game co
 No previous experience with Arduino or electronics is required.
 
 ABOUT
+
 This workshop is part of the Textile Game Controller workshop series – a partnership between OCAD University’s Social Body Lab and game:play Lab and Dames Making Games, funded by the Social Sciences and Humanities Research Council Partnership Engage Grant. Be sure to check out our future events as well!
