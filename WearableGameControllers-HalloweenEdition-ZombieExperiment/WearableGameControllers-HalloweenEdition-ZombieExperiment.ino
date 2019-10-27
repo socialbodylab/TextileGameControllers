@@ -18,8 +18,8 @@
 **************************************************************************/
 #include <Keyboard.h>
 /*******Change the control to any key you want *******/
-int LeftPin = 7; // Set Pin 7 on Arduino to A key
-int RightPin = 6; // Set Pin 6 on Arduino to L key
+int PlayerOnePin = 7; // Set Pin 7 on Arduino to A key
+int PlayerTwoPin = 6; // Set Pin 6 on Arduino to L key
 
 void setup()
 {
