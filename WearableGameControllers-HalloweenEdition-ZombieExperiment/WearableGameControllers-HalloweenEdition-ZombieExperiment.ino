@@ -34,14 +34,14 @@ void loop()
 {
   if (digitalRead(PlayerOnePin) == 1)  
   {
-    Keyboard.press(101);  //A key
-    delay(100);  
+    Keyboard.press(97);  //A key
+    delay(1000);  //waits for a second
   }
   
   if (digitalRead(PlayerTwoPin) == 1)  
   {
-    Keyboard.press(114);  //L key
-    delay(100);  
+    Keyboard.press(108);  //L key
+    delay(1000);  //waits for a second
   }
   else{
      Keyboard.releaseAll();
