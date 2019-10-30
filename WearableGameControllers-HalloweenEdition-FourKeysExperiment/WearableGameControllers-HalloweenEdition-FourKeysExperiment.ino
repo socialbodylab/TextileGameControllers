@@ -13,12 +13,16 @@
  * http://www.asciitable.com/
  * 
  * Social Body Lab, 2019 Oct.
-**************************************************************************/#include <Keyboard.h>
+**************************************************************************/
 #include <Keyboard.h>
 int LeftPin = 6; // Set Pin 6 on Arduino to Left key
 int RightPin = 7; // Set Pin 7 on Arduino to Right key
 int UpPin = 8; // Set Pin 8 on Arduino to Up key
 int DownPin = 9; // Set Pin 9 on Arduino to Down key
+int KeyVal1 = 216; // Set ASCII value for Left key, you can change it to any key by finding the right value
+int KeyVal2 = 215; // Set ASCII value for Right key, you can change it to any key by finding the right value
+int KeyVal3 = 218; // Set ASCII value for Up key, you can change it to any key by finding the right value
+int KeyVal4 = 217; // Set ASCII value for Down key, you can change it to any key by finding the right value
 
 void setup()
 {
@@ -39,22 +43,22 @@ void loop()
 
   if (digitalRead(LeftPin) == 0)  
   {
-    Keyboard.press(216);  //Left key
+    Keyboard.press(KeyVal1);  //Left key
     delay(100);  
   }
   if (digitalRead(RightPin) == 0)  
   {
-    Keyboard.press(215);  //Right key
+    Keyboard.press(KeyVal2);  //Right key
     delay(100);  
   }
   if (digitalRead(UpPin) == 0)  
   {
-    Keyboard.press(218);  //Up key
+    Keyboard.press(KeyVal3);  //Up key
     delay(100);  
   }
   if (digitalRead(DownPin) == 0)  
   {
-    Keyboard.press(217);  //Down key
+    Keyboard.press(KeyVal4);  //Down key
     delay(100);  
   }
   else{
