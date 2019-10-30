@@ -13,10 +13,10 @@
  * http://www.asciitable.com/
  * 
  * Social Body Lab, 2019 Oct.
-**************************************************************************/#include <Keyboard.h>
+**************************************************************************/
 #include <Keyboard.h>
 int SpacePin = 7; // Set Pin 7 on Arduino to Space key
-
+int KeyVal = 32; //Set ASCII value for Space key, you can change it to any key by finding the right value
 
 void setup()
 {
@@ -31,7 +31,7 @@ void loop()
 
   if (digitalRead(SpacePin) == 0)  
   {
-    Keyboard.press(32);  //Space key
+    Keyboard.press(KeyVal);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   else{
