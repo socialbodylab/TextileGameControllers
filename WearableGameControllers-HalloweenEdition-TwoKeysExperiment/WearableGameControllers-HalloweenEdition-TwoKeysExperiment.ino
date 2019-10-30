@@ -17,7 +17,8 @@
 #include <Keyboard.h>
 int LeftPin = 7; // Set Pin 7 on Arduino to Left key
 int RightPin = 6; // Set Pin 6 on Arduino to Right key
-
+int KeyVal1 = 216; // Set ASCII value for Left arrow key, you can change it to any key by finding the right value
+int KeyVal2 = 215; // Set ASCII value for Right arrow key, you can change it to any key by finding the right value
 
 void setup()
 {
@@ -34,12 +35,12 @@ void loop()
 
   if (digitalRead(LeftPin) == 0)  
   {
-    Keyboard.press(216);  //Left arrow key
+    Keyboard.press(KeyVal1);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   if (digitalRead(RightPin) == 0)  
   {
-    Keyboard.press(215);  //Right arrow key
+    Keyboard.press(KeyVal2);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   else{
