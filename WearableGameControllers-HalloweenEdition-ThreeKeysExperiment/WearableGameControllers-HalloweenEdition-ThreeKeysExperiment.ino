@@ -15,12 +15,14 @@
  * http://www.asciitable.com/
  * 
  * Social Body Lab, 2019 Oct.
-**************************************************************************/#include <Keyboard.h>
+**************************************************************************/
 #include <Keyboard.h>
 int APin = 6; // Set Pin 6 on Arduino to A key
 int SPin = 7; // Set Pin 7 on Arduino to S key
 int DPin = 8; // Set Pin 8 on Arduino to D key
-
+int KeyVal1 = 97; // Set ASCII value for A key, you can change it to any key by finding the right value
+int KeyVal2 = 115; // Set ASCII value for S key, you can change it to any key by finding the right value
+int KeyVal3 = 100; // Set ASCII value for D key, you can change it to any key by finding the right value
 
 void setup()
 {
@@ -39,17 +41,17 @@ void loop()
 
   if (digitalRead(APin) == 0)  
   {
-    Keyboard.press(97);  //A key
+    Keyboard.press(KeyVal1);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   if (digitalRead(SPin) == 0)  
   {
-    Keyboard.press(115);  //S key
+    Keyboard.press(KeyVal2);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   if (digitalRead(DPin) == 0)  
   {
-    Keyboard.press(100);  //D key
+    Keyboard.press(KeyVal3);  // This function is as if a key were pressed and held on your keyboard.
     delay(100);  
   }
   else{
